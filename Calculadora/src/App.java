@@ -27,8 +27,18 @@ public class App {
                 case 1:
                     System.out.println("Digite o valor 1");
                     a = in.nextDouble();
+                    if (a < 0 || a > 50) {
+                        System.out.print("\033[H\033[2J");
+                        System.out.println("Apenas numeros entre 0 e 50");
+                        break;
+                    }
                     System.out.println("Digite o valor 2");
                     b = in.nextDouble();
+                    if (b < 0 || b > 50) {
+                        System.out.print("\033[H\033[2J");
+                        System.out.println("Apenas numeros entre 0 e 50");
+                        break;
+                    }
                     conta = a + b;
                     conta = Math.floor(conta * 100) / 100;
                     System.out.print("\033[H\033[2J");
@@ -37,8 +47,18 @@ public class App {
                 case 2:
                     System.out.println("Digite o valor 1");
                     a = in.nextDouble();
+                    if (a < 0 || a > 50) {
+                        System.out.print("\033[H\033[2J");
+                        System.out.println("Apenas numeros entre 0 e 50");
+                        break;
+                    }
                     System.out.println("Digite o valor 2");
                     b = in.nextDouble();
+                    if (b < 0 || b > 50) {
+                        System.out.print("\033[H\033[2J");
+                        System.out.println("Apenas numeros entre 0 e 50");
+                        break;
+                    }
                     conta = a - b;
                     conta = Math.floor(conta * 100) / 100;
                     System.out.print("\033[H\033[2J");
@@ -47,8 +67,18 @@ public class App {
                 case 3:
                     System.out.println("Digite o valor 1");
                     a = in.nextDouble();
+                    if (a < 0 || a > 50) {
+                        System.out.print("\033[H\033[2J");
+                        System.out.println("Apenas numeros entre 0 e 50");
+                        break;
+                    }
                     System.out.println("Digite o valor 2");
                     b = in.nextDouble();
+                    if (b < 0 || b > 50) {
+                        System.out.print("\033[H\033[2J");
+                        System.out.println("Apenas numeros entre 0 e 50");
+                        break;
+                    }
                     conta = a / b;
                     conta = Math.floor(conta * 100) / 100;
                     System.out.print("\033[H\033[2J");
@@ -57,8 +87,18 @@ public class App {
                 case 4:
                     System.out.println("Digite o valor 1");
                     a = in.nextDouble();
+                    if (a < 0 || a > 50) {
+                        System.out.print("\033[H\033[2J");
+                        System.out.println("Apenas numeros entre 0 e 50");
+                        break;
+                    }
                     System.out.println("Digite o valor 2");
                     b = in.nextDouble();
+                    if (b < 0 || b > 50) {
+                        System.out.print("\033[H\033[2J");
+                        System.out.println("Apenas numeros entre 0 e 50");
+                        break;
+                    }
                     conta = a * b;
                     conta = Math.floor(conta * 100) / 100;
                     System.out.print("\033[H\033[2J");
@@ -67,6 +107,9 @@ public class App {
                 case 0:
                     System.out.print("\033[H\033[2J");
                     menu = false;
+                    break;
+                default:
+                    System.out.println("Numero fora do range!");
                     break;
             }
 
